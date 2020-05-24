@@ -13,7 +13,7 @@ namespace CopyConstructor
         {
             this.Names = names;
             this.Address = address;
-            this.edad = edad + 1;
+            this.edad = edad;
 
         }
 
