@@ -14,7 +14,7 @@ namespace AsynchronousFactoryMethod
 
         private async Task<Foo> InitAsync()
         {
-            await Task.Delay(1000);
+            await Task.Delay(2000);
             return this;
         }
 
