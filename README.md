@@ -1,2 +1,2 @@
 # BestPractices
-Patrones de Diseño y buenas practicas
+Principios Solid,Patrones de Diseño y buenas practicas
