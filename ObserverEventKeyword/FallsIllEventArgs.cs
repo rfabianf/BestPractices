@@ -7,5 +7,6 @@ namespace ObserverEventKeyword
     public class FallsIllEventArgs
     {
         public string Address;
+        public string Nombre;
     }
 }

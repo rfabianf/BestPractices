@@ -8,8 +8,9 @@ namespace ObserverEventKeyword
     {
         public void CatchACold()
         {
-            FallsIll?.Invoke(this, new FallsIllEventArgs() { Address = "Urb San Isidro Mzna W Lote 41"});
+            FallsIll?.Invoke(this,new FallsIllEventArgs() { Nombre = "Jorge Perez Perez",Address = "Urb Colonial 123"});
         }
+
         public event EventHandler<FallsIllEventArgs> FallsIll;
 
     }
