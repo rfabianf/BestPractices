@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reactive.Linq;
 
 namespace ObserverSpecialInterfaces
 {
@@ -9,13 +10,18 @@ namespace ObserverSpecialInterfaces
             var person = new Person();
             IDisposable sub = person.Subscribe(this);
 
+            //---------Con Extension Reactiva---------------
+            //-----------------------------------------------
+            //person.OfType<FallsIllEvent>().Subscribe(args =>
+            //Console.WriteLine($"A doctor is required in address {args.Address}"));
+
             person.FallsIll();
             sub.Dispose();
 
         }
         static void Main(string[] args)
         {
-           new Program();
+            new Program();
         }
 
         public void OnCompleted()
@@ -30,7 +36,7 @@ namespace ObserverSpecialInterfaces
 
         public void OnNext(Event value)
         {
-            if(value is FallsIllEvent args)
+            if (value is FallsIllEvent args)
             {
                 Console.WriteLine($"A doctor is required in address {args.Address}");
             }
