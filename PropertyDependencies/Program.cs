@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PropertyDependencies
 {
@@ -17,7 +13,7 @@ namespace PropertyDependencies
              };
             p.Age = 15;
             p.Citizen = true;
-            p.Sex = "M";
+            p.Sex = "M";//No se encuentra en el árbol de expresion
         }
     }
 }
